@@ -1,1 +1,6 @@
-# Bhavya_SoC_2026
+# Bhavya_SoC_2026'
+So far, I have set up the project environment and learned the basics of OpenCV and MediaPipe. I built a program that opens the webcam, detects my hand, and finds all 21 hand landmarks. Then I used these landmarks to recognize different hand gestures like Fist, Open Palm, Point, Peace, Thumbs Up, and OK. I also separated the gesture detection code into a gestures.py file and created a test_gestures.py file to test the gestures more easily.
+Challenges Faced:
+One of the biggest challenges I faced was that most online tutorials use the old MediaPipe API (mediapipe.solutions), but I was using the latest version of MediaPipe with Python 3.14. Because of this, a lot of the tutorial code did not work directly, and I had to understand the new mediapipe.tasks API and make changes accordingly. Another challenge was understanding how the 21 hand landmarks work and using them correctly to detect different gestures. I also had to spend some time adjusting the gesture conditions so that they worked more reliably.
+At first, it was difficult to understand what each of the 21 hand landmarks represented and how to use them to identify different gestures. After practicing and checking the landmark numbers, it became easier.
+I was confused about whether to use the left hand or the right hand because the webcam image is flipped. It took some time to understand how MediaPipe identifies the hand and how to use that information correctly in my gesture detection code.
